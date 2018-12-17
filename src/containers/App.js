@@ -20,6 +20,7 @@ class App extends React.Component {
                 }],
             title: 'Webpack loaders training'
         };
+        this.removeTodo = this.removeTodo.bind(this);
     }
     addTodo(val) {
         const todo = {
@@ -39,7 +40,7 @@ class App extends React.Component {
         return (
             <div className={style.TodoApp}>
                 <Title title={this.state.title} numberOfTasks={this.state.data.length} />
-                <TodoList tasks={this.state.data}/> 
+                <TodoList tasks={this.state.data} onClick={this.removeTodo}/> 
             </div>
         );
     }
