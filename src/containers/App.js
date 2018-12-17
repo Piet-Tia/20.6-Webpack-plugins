@@ -8,14 +8,15 @@ class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            data: [
-                {
-                    text: "a",
-                    id: 1231231231234
-                },
-                {
-                    text: "b",
-                    id: 567856857567567
+            data: [{
+                id: 1,
+                    text: 'clean room'
+                }, {
+                id: 2,
+                    text: 'wash the dishes'
+                }, {
+                id: 3,
+                    text: 'feed my cat'
                 }],
             title: 'Webpack loaders training'
         };
